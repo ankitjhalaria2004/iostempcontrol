@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TemperatureViewController : UIViewController
+@interface TemperatureViewController : UIViewController<UITextFieldDelegate>
 
 @property (nonatomic, strong) IBOutlet UITextField *farenheitTextField;
 @property (nonatomic, strong) IBOutlet UITextField *celsiusTextField;
 @property (nonatomic, strong) IBOutlet UIButton *convertButton;
+@property (nonatomic, strong) IBOutlet UITapGestureRecognizer *tapGestureRecongnizer;
 @end
